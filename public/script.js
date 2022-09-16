@@ -58,7 +58,7 @@ const edit = (id, name, age)=> {
 
 //Delete record
 const deleteRecord = (id)=> {
-  if (confirm('Are you sure?')) {
+  if (confirm('Are you sure about deleting the record?')) {
     fetch(`http://localhost:5000/person/${id}`, {
         method: 'DELETE',
         headers: {
